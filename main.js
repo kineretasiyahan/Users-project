@@ -3,7 +3,7 @@ function getUsers() {
         .then((response) => { return response.json() })
 }
 let usersArray = [];
-async function users() {
+async function usersDetails() {
     try {
         usersArray = await getUsers();
         usersArray.forEach(userCard => {
@@ -43,7 +43,7 @@ async function users() {
     }
     finally { }
 }
-users()
+usersDetails()
 function usersTable() {
 
     userCards.innerHTML = "";
