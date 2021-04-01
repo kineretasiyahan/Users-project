@@ -9,24 +9,30 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <header><a href="https://tech-career-alternative.firebaseapp.com/"><img src="images/logo tech-career.png" class="imgHeader"></a>
-       <a href="#"><img src="images/indicom.png" class="imgHeader"></header></a> 
-       <button id="btn" onclick="usersTable()">Table</button>
-       <button id="btn1" onclick="addNewUser()">Add new user</button>
-       <div class="sidenav">
+    <header><a href="https://tech-career-alternative.firebaseapp.com/"><img src="images/logo tech-career.png"
+                class="imgHeader"></a>
+        <a href="#"><img src="images/indicom.png" class="imgHeader">
+    </header></a>
+    <div id="buttons"> <button id="btn" onclick="usersTable()">Details</button>
+        <button id="btn1" onclick="addNewUser()">Add user</button>
+    </div>
+    <div class="sidebar">
         <a href="#about">About</a>
         <a href="#services">users</a>
         <a href="#clients">Services</a>
         <a href="#contact">Contact us</a>
-      </div>
-    <div id="userCards" ></div>
+        <a href="http://127.0.0.1:5500/index.html?">Home page</a>
+    </div>
+    <div id="userCards"></div>
     <form id="formUser" onsubmit="return validEmail()">
     </form>
     <table id="tableCards">
     </table>
     <footer id="footer">
-        <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size:36px"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100001057653397"><i class="fa fa-facebook-square"
+                style="font-size:36px"></i></a>
         <a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
         <a href="https://github.com/kineretasiyahan"><i class="fa fa-github" style="font-size:36px"></i></a>
     </footer>

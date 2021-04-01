@@ -1,75 +1,150 @@
 body{
-    font-family: 'Dela Gothic One', cursive;
-    color: white;
-    background-image: url("images/1.webp");
+    font-family: 'Chango', cursive;
+    color: rgba(0, 0, 0, 0.705);
+    background-image: url("images/6bfb9f809a970b90880b400336d14f01.jpg");
     background-size: cover;
     background-attachment: fixed;
     font-size: 80%;
+    
 }
 header{
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
+  padding: 2px;
+  height: 15vh;
 }
 div{
-    border: 3px double royalblue;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0  0   0   0.2) ;
+    border: 2px solid rgba(17, 188, 255, 0.733);
     text-align: center;
     margin: 10px;
     cursor: pointer;
+    animation: anim 4s;
+    animation-timing-function: 4;
+}
+
+@keyframes anim { 
+    0% { transform: rotateY(180deg);}
+    100% {transform: rotateY(360deg);}
+}
+#mainDiv div:hover{
+    border: none;
+    transform: scale(1.1);
+    color: rgba(0, 178, 248, 0.733);
+    
 }
 #userCards{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     justify-content: space-between;
+    align-items: center;
     border: none;
     margin: 10px;
+    margin-left:10%;
     
 }
 img{width: 50px;
-    height: 50px;}
-
+    height: 50px;
+border-radius: 25px;}
 .imgHeader{
     width: 100px;
     height: 100px;
 }
-#btn1{
-    display: inline-block;
-    margin-left: 85vw;
-    color: royalblue;
-    border:2px solid royalblue;
-    border-radius: 6px;
-    cursor: pointer;
-}
+#btn1,
 #btn{
-    display: inline-block;
-    margin-left: 1vw;
     color: royalblue;
-    border:2px solid royalblue;
+    border:2px solid rgb(30, 189, 252);
     border-radius: 6px;
     cursor: pointer;
+    height: 50px;
 }
 #btn3{
     color: royalblue;
-    border:2px solid royalblue;
+    border:2px solid rgb(17, 229, 236);
     border-radius: 6px;  
+    
 }
+#btn:hover,
+#btn1:hover{
+  color: rgba(17, 188, 255, 0.733);
 
-  footer{
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+td{
+    color: black;
+    border: 3px double rgb(17, 229, 236);
+}
+th{
+    font-size: medium;
+    color: black;
+}
+.sidebar {
+  width: 100px;
+  position: fixed;
+  top: 190px;
+  padding: 20px ;
+  height: 40vh;
+}
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block;
+}
+.sidebar a:hover {
+  color: rgba(17, 188, 255, 0.733);
+  font-size: 25px;
+}
+#tableCards{
+  margin-left: 30vw;
+  text-align: center;
+    
+}
+footer{
       display: flex;
       justify-content: center;
       gap: 10px;
-  }
-  a{
-      color: white;
-  }
-  td{
-      color: white;
-  }
-  #allDiv div:hover{
-      border: none;
-      transform: scale(1.0);
-  }
+      background-color: rgba(178, 232, 248, 0.616);   
+}
+#formUser{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+input{
+    border: none;
+}
+div>button{
+    color: royalblue;
+    border:2px solid rgb(17, 229, 236);
+    border-radius: 6px;  
+}
+a:hover{
+    color: rgba(17, 188, 255, 0.733)
+}
+#buttons{
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 750px){
+    .sidebar{
+        position: static;
+        margin: 0 auto ;
+    }
+    #userCards>div{
+        width: 300px;
+    }
+    #tableCards{
+        margin: 5vw;
+        font-size: xx-small;
+    }}
+
+
 
   
