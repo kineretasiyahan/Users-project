@@ -143,7 +143,17 @@ a:hover{
     #tableCards{
         margin: 5vw;
         font-size: xx-small;
-    }}
+    }
+    .imgHeader{
+        width: 100px;
+        height: 100px;
+        margin: 4px;
+        border: 1px solid rgb(17, 229, 236);
+    }
+    footer{
+        margin: 4px;
+    }
+}
 
 
 
