@@ -18,17 +18,17 @@ async function usersDetails() {
         </div>
         </div>`
         })
-        usersArray.forEach(user => {
-            document.getElementById(`${user._id}`).addEventListener('click', () => {
+        usersArray.forEach(userCard => {
+            document.getElementById(`${userCard._id}`).addEventListener('click', () => {
                 userCards.innerHTML = "";
                 tableCards.innerHTML = "";
                 userCards.innerHTML =
                    `<div>
-                   <h1>${user.name.first} ${user.name.last}</h1>
-                   <h3>${user.email}</h3>
-                   <h3>${user.age}</h3>
-                   <h4>${user.phone}</h4>
-                   <img src="${user.picture}"target="_blank">
+                   <h1>${userCard.name.first} ${userCard.name.last}</h1>
+                   <h3>${userCard.email}</h3>
+                   <h3>${userCard.age}</h3>
+                   <h4>${userCard.phone}</h4>
+                   <img src="${userCard.picture}"target="_blank">
                    <br>
                    <br>
                    <button id="btn3"><a href="http://127.0.0.1:5500/index.html?">Home page</button></a>

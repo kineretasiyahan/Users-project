@@ -57,6 +57,12 @@ border-radius: 25px;}
     cursor: pointer;
     height: 50px;
 }
+#btn2{
+    color: royalblue;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 50px;
+}
 #btn3{
     color: royalblue;
     border:2px solid rgb(17, 229, 236);
