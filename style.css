@@ -19,8 +19,7 @@ div{
     text-align: center;
     margin: 10px;
     cursor: pointer;
-    animation: anim 4s;
-    animation-timing-function: 4;
+    animation: anim 3s;
 }
 
 @keyframes anim { 

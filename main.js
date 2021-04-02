@@ -15,7 +15,7 @@ async function usersDetails() {
         <h3>${userCard.age}</h3>
         <h4>${userCard.phone}</h4>
         <img src="${userCard.picture}"target="_blank">
-        </div></a>
+        </div>
         </div>`
         })
         usersArray.forEach(user => {
@@ -23,9 +23,8 @@ async function usersDetails() {
                 userCards.innerHTML = "";
                 tableCards.innerHTML = "";
                 userCards.innerHTML =
-                    `<div id=${user._id}>
-                   <h1>user</h1>
-                   <h2>${user.name.first} ${user.name.last}</h2>
+                   `<div>
+                   <h1>${user.name.first} ${user.name.last}</h1>
                    <h3>${user.email}</h3>
                    <h3>${user.age}</h3>
                    <h4>${user.phone}</h4>
@@ -41,14 +40,13 @@ async function usersDetails() {
     catch (error) {
         console.log(error);
     }
-    finally { }
 }
 usersDetails()
-function usersTable() {
 
+function usersTable() {
     userCards.innerHTML = "";
     footer.innerHTML = "";
-    tableCards.innerHTML = `  <tr>
+    tableCards.innerHTML = `<tr>
     <th>First name </th>
     <th> Last name </th>
     <th>Email</th>
@@ -78,9 +76,9 @@ function addNewUser() {
     formUser.innerHTML += `<div>
     <div><lable>Full name :<input id="name" type="text"></lable></div>
     <div><lable>Age :<input id="age"  type="number"></lable></div>
-    <div><lable> Email :<input id="email"  type="email"></lable></div>
-    <div><lable>Email :<input id="email2"  type="email"></lable></div>
-    <div><lable> Phone:<input id="phone"  type="number"></lable></div>
+    <div><lable> Email :<input id="email" type="email"></lable></div>
+    <div><lable>Email :<input id="email2" type="email"></lable></div>
+    <div><lable> Phone:<input id="phone" type="number"></lable></div>
     <button>Add</button>`
 }
 function validEmail() {
